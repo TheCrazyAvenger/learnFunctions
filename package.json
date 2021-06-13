@@ -1,0 +1,38 @@
+{
+  "name": "minimal-webpack-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "test": "jest",
+    "lint": "eslint --ext .js src --fix"
+  },
+  "keywords": [],
+  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "jest": "^27.0.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/fixtures/"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
