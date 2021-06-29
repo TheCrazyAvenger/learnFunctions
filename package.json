@@ -1,5 +1,5 @@
 {
-  "name": "minimal-webpack-setup",
+  "name": "learn-functions",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,13 @@
     "lint": "eslint --ext .js src --fix"
   },
   "keywords": [],
-  "author": "Robin Wieruch <opensource@rwieruch.com> (https://www.robinwieruch.de)",
+  "author": "Ilya Pavlushchik",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.28.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
